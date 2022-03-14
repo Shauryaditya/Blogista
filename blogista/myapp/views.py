@@ -11,7 +11,7 @@ from django.core.mail import send_mail
 def index(request):
     blog = Blog.objects.all()
     context = {'blogs':blog}
-    return render(request,'home.html',context)
+    return render(request,'index.html',context)
 
 
 
